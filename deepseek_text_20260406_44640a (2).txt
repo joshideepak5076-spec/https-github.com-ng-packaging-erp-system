@@ -1,0 +1,81 @@
+ng-packaging-erp/
+│
+├── README.md                           # Complete setup guide
+├── .gitignore
+├── package.json                        # Root package.json
+│
+├── backend/
+│   ├── package.json
+│   ├── .env.example
+│   ├── server.js
+│   ├── config/
+│   │   ├── database.js
+│   │   ├── auth.js
+│   │   └── multer.js
+│   ├── models/
+│   │   ├── Order.js
+│   │   ├── Customer.js
+│   │   ├── User.js
+│   │   └── Product.js
+│   ├── controllers/
+│   │   ├── orderController.js
+│   │   ├── authController.js
+│   │   ├── productionController.js
+│   │   ├── dispatchController.js
+│   │   └── clientController.js
+│   ├── routes/
+│   │   ├── auth.routes.js
+│   │   ├── order.routes.js
+│   │   ├── production.routes.js
+│   │   ├── dispatch.routes.js
+│   │   └── client.routes.js
+│   ├── middleware/
+│   │   ├── auth.js
+│   │   └── upload.js
+│   └── utils/
+│       ├── emailService.js
+│       └── helpers.js
+│
+├── frontend/
+│   ├── package.json
+│   ├── tailwind.config.js
+│   ├── public/
+│   │   └── index.html
+│   └── src/
+│       ├── App.js
+│       ├── index.js
+│       ├── index.css
+│       ├── context/
+│       │   └── AuthContext.js
+│       ├── services/
+│       │   └── api.js
+│       ├── pages/
+│       │   ├── admin/
+│       │   │   ├── Dashboard.js
+│       │   │   ├── OrderList.js
+│       │   │   ├── OrderForm.js
+│       │   │   ├── OrderDetail.js
+│       │   │   └── CustomerList.js
+│       │   ├── production/
+│       │   │   └── ProductionDashboard.js
+│       │   ├── dispatch/
+│       │   │   └── DispatchDashboard.js
+│       │   ├── client/
+│       │   │   └── ClientDashboard.js
+│       │   └── auth/
+│       │       ├── Login.js
+│       │       └── ClientLogin.js
+│       └── components/
+│           ├── Navbar.js
+│           ├── Sidebar.js
+│           ├── OrderCard.js
+│           ├── StatusTimeline.js
+│           └── LoadingSpinner.js
+│
+├── database/
+│   ├── schema.sql
+│   └── seed.sql
+│
+└── docs/
+    ├── DEPLOYMENT_GUIDE.md
+    └── API_DOCUMENTATION.md
